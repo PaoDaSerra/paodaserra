@@ -18,7 +18,7 @@ function listarPoes(produtos) {
     
             <div class="informacoes">
                 <h3>${produto.nome}</h3>
-                <h3>${produto.valor}</h3>
+                <h3>${produto.preco}</h3>
             </div>
     
             <div>
