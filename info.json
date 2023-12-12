@@ -5,21 +5,20 @@
         "imagem": "caminho/para/imagem1.jpg",
         "descricao": "Descrição do Pão 1.",
         "ingredientes": ["Ingrediente 1A", "Ingrediente 1B", "Ingrediente 1C"],
-        "valor": 19.99
+        "preco": 19.99
       },
       {
         "nome": "Pão 2",
         "imagem": "caminho/para/imagem2.jpg",
         "descricao": "Descrição do Pão 2.",
         "ingredientes": ["Ingrediente 2A", "Ingrediente 2B", "Ingrediente 2C"],
-        "valor": 29.99
-      },
+        "preco": 29.99},
       {
         "nome": "Pão 3",
         "imagem": "caminho/para/imagem3.jpg",
         "descricao": "Descrição do Pão 3.",
         "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
-        "valor": 24.99
+        "preco": 24.99
       }
     ]
 }
