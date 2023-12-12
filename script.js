@@ -3,7 +3,7 @@ function rolarParaSecao2() {
 }
 
 
-fetch('https://github.com/PaoDaSerra/paodaserra/info.json')
+fetch('https://raw.githubusercontent.com/PaoDaSerra/paodaserra/main/info.json')
   .then(response => {
     if (!response.ok) {
       throw new Error(`Erro de requisição: ${response.status}`);
