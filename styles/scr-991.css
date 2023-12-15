@@ -1,0 +1,9 @@
+/* Celular Paisagem */
+
+/* .line {
+    width: 550px;
+} */
+
+.parallax {
+    background: rgba(0, 0, 0, 0.4)url(../banner.jpg);
+}

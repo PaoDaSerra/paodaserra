@@ -1,0 +1,9 @@
+/* Metade da Tela Computador */
+
+/* .line {
+    width: 60px;
+} */
+
+.parallax {
+    background: rgba(0, 0, 0, 0.4)url(../banner.jpg);
+}

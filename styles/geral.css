@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EFEAE5;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100vw;
+    height: 60px;
+    padding: 0 2vw;
+    background: rgba(194, 88, 54, var(--op));
+    color: #FFF;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right, .left {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: #FFF;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.parallax {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+
+.banner:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), 50%, rgba(0, 0, 0, 0.2) 70%, #00000090 100%);
+}
+
+#verProdutos {
+    width: 190px;
+    height: 38px;
+    position: absolute;
+    bottom: 15%;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    z-index: 2;
+}
+
+.line {
+    height: 1px;
+    width: 75%;
+    background-color: #FFF;
+}
+
+#nossosProdutos {
+    padding: 4vh 6vw;
+}
+
+#produtos {
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    margin-top: 20px;
+    /* border: 1px solid #ccc; */
+    /* padding: 10px;
+    text-align: center; */
+    /* background: #ff0000; */
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantidade {
+    display: flex;
+    background: #D9D9D9;
+    border-radius: 4px;
+}
+
+.quantidade_input {
+    width: 15px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.aumentar_quantidade,
+.diminuir_quantidade{
+    width: 21px;
+    border: none;
+    font-size: 1.2rem;
+    background: transparent;
+}
+
+.botoes {
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comprar {
+    width: 60%;
+    background: #C25836;
+    color: #FFF;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+}
+
+.imagem {
+    width: 100%;
+}

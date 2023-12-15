@@ -1,0 +1,74 @@
+/* Celular Retrato */
+
+/* .line {
+    width: 280px;
+} */
+
+nav {
+    box-shadow: 0px 10px 20px hsla(0, 0%, 0%, var(--ops));
+}
+
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #FFF;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 2;
+    transform: translate(0, -20%);
+}
+
+.line {
+    width: 85%;
+}
+
+#nossosProdutos {
+    text-align: center;
+}
+
+.nome {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.preco {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.parallax {
+    background: rgba(0, 0, 0, 0.4)url(../assets/images/2-como-fazer-pao-caseiro-Terra.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-position: 50% 100%; */
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: .7em;
+}
+
+footer {
+    width: 100vw;
+    height: 47px;
+    background-image: url(../assets/images/wave.png);
+    background-size: cover;
+}

@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pão da Serra</title>
+    <link rel="stylesheet" href="styles/geral.css">
+
+    <link rel="stylesheet" media="(max-width: 575px)" href="styles/scr-575.css">
+    <link rel="stylesheet" media="(min-width: 576px)  and (max-width: 767px)" href="styles/scr-767.css">
+    <link rel="stylesheet" media="(min-width: 768px)  and (max-width: 990px)" href="styles/scr-991.css">
+    <link rel="stylesheet" media="(min-width: 991px)  and (max-width: 1199px)" href="styles/scr-1199.css">
+    <link rel="stylesheet" media="(min-width: 1200px)  and (max-width: 1399px)" href="styles/scr-1399.css">
+    <link rel="stylesheet" media="(min-width: 1400px)" href="styles/scr+1400.css">
 </head>
 <body>
     <nav>
-        <div class="left">
-            <ul>
-                <li>Produtos</li>
-                <li>Contato</li>
-            </ul>
-        </div>
+        <ul class="left">
+            <li>Produtos</li>
+            <li>Contato</li>
+        </ul>
 
-        <div class="right">
-            <ul>
-                <li>carrinho</li>
-                <li>login</li>
-            </ul>
-        </div>
+        <ul class="right">
+            <li>carrinho</li>
+        </ul>
     </nav>
 
-    <banner>
-        <h1>Pão da Serra</h1>
-        <div class="line"></div>
-        <h3>Pões Fantásticos Feitos Por Lurdinha</h3>
+    <div class="banner parallax">
+        <div class="txt">
+            <h1>Pão da Serra</h1>
+            <div class="line"></div>
+            <h3>Pões Fantásticos Feitos Por Lurdinha</h3>
+        </div>
 
-        <button type="button">ver produtos</button>
-    </banner>
+        <button type="button" id="verProdutos">ver produtos</button>
+    </div>
 
-    <div id="produtos">
+    <div id="nossosProdutos">
         <h2>Nossos Produtos:</h2>
+        <div id="produtos"></div>
     </div>
 
     <div class="line"></div>
@@ -39,7 +45,7 @@
     <div id="novidades">
         <h2>Receba Novidades!</h2>
         <div class="container">
-            <input type="text" class="input-box" placeholder="Email">
+            <input type="text" class="input-box" name="email" id="a" autocomplete="sla" placeholder="Email">
             <i class="icon-envelope"></i>
             <button class="button">OK</button>
         </div>
@@ -64,6 +70,10 @@
             </div></li>
         </ul>
     </div>
+
+    <footer>
+    </footer>
 </body>
 <script src="script.js"></script>
+<script src="script2.js"></script>
 </html>
