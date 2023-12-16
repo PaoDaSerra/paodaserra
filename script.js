@@ -22,7 +22,7 @@ function listarPoes(produtos) {
         novoProduto.classList.add("produto");
     
         novoProduto.innerHTML = `
-            <img src="assets/images/imagem.png" alt="Imagem ${produto.nome}" class="imagem">
+            <img src="${produto.imagem}" alt="Imagem ${produto.nome}" class="imagem">
     
             <div class="informacoes">
                 <h3 class="nome">${produto.nome}</h3>
