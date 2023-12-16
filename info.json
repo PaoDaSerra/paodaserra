@@ -1,24 +1,60 @@
 {
-    "produtos": [
-      {
-        "nome": "Pão 1",
-        "imagem": "caminho/para/imagem1.jpg",
-        "descricao": "Descrição do Pão 1.",
-        "ingredientes": ["Ingrediente 1A", "Ingrediente 1B", "Ingrediente 1C"],
-        "preco": 19.99
-      },
-      {
-        "nome": "Pão 2",
-        "imagem": "caminho/para/imagem2.jpg",
-        "descricao": "Descrição do Pão 2.",
-        "ingredientes": ["Ingrediente 2A", "Ingrediente 2B", "Ingrediente 2C"],
-        "preco": 29.99},
-      {
-        "nome": "Pão 3",
-        "imagem": "caminho/para/imagem3.jpg",
-        "descricao": "Descrição do Pão 3.",
-        "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
-        "preco": 24.99
-      }
-    ]
+  "produtos": [
+    {
+      "nome": "Pão Tradicional",
+      "imagem": "assets/images/paoTradicional.jpg",
+      "descricao": "Massa levemente adocicada com textura leve e macia.",
+      "ingredientes": ["Ingrediente 1A", "Ingrediente 1B", "Ingrediente 1C"],
+      "preco": 14.90
+    },
+    {
+      "nome": "Pão de Abóbora",
+      "imagem": "assets/images/paoAbobora.jpg",
+      "descricao": "Pão adocicado com abóbora adicionada à massa. Extremamente saboroso.",
+      "ingredientes": ["Ingrediente 2A", "Ingrediente 2B", "Ingrediente 2C"],
+      "preco": 29.99
+    },
+    {
+      "nome": "Pão de Torresmo",
+      "imagem": "assets/images/paoTorresmo.jpg",
+      "descricao": "Pão levemente salgada, com torresmo adicionados à massa tornando-a mais nutritiva.",
+      "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
+      "preco": 24.99
+    },
+    {
+      "nome": "Pão Cuca",
+      "imagem": "assets/images/paoCuca.jpg",
+      "descricao": "Pão estilo tradicional, com recheios de sua preferência, cobertos por farofa doce e crocante, perfumado com raspas de limão.",
+      "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
+      "preco": 24.99
+    },
+    {
+      "nome": "Pão de Frios",
+      "imagem": "assets/images/paoFrios.jpg",
+      "descricao": "Massa salgada recheada com presunto e queijo.",
+      "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
+      "preco": 24.99
+    },
+    {
+      "nome": "Pão 6",
+      "imagem": "assets/images/pao6.jpg",
+      "descricao": "Descrição do Pão 6.",
+      "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
+      "preco": 24.99
+    },
+    {
+      "nome": "Pão 7",
+      "imagem": "assets/images/pao7.jpg",
+      "descricao": "Descrição do Pão 7.",
+      "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
+      "preco": 24.99
+    },
+    {
+      "nome": "Pão 8",
+      "imagem": "assets/images/pao8.jpg",
+      "descricao": "Descrição do Pão 8.",
+      "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
+      "preco": 24.99
+    }
+  ]
 }

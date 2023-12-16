@@ -24,10 +24,20 @@ nav {
     align-items: center;
 }
 
+.navButton {
+    border: none;
+    background: transparent;
+    color: #FFF;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    /* cursor: pointer; */
+}
+
 .right, .left {
     display: flex;
     justify-content: space-around;
-    gap: 2rem;
+    /* gap: 2rem; */
 }
 
 ul {
@@ -44,6 +54,7 @@ ul {
     align-items: center;
     gap: 1.5rem;
     color: #FFF;
+    border-bottom: 1px solid #000000;
 }
 
 h1 {
@@ -56,6 +67,16 @@ h1 {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50% 100%;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 2;
+    transform: translate(0, -20%);
 }
 
 .banner:after {
@@ -151,4 +172,60 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .imagem {
     width: 100%;
+}
+
+#novidades, #contatos {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+#novidades > h2, 
+#contatos > h2 {
+    color: #C25836;
+}
+
+.container {
+    /* position: relative; */
+    display: flex;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    overflow: hidden;
+    /* padding: 10px; */
+}
+
+.input-box {
+    /* position: absolute; */
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 7px 0 0 7px;
+}
+
+.input-box {
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #000;
+}
+
+.icon-envelope {
+    color: #C25836;
+    font-size: 24px;
+}
+
+.buttonOk {
+    margin: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #C25836;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
 }

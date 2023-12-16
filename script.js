@@ -97,10 +97,19 @@ fetch('https://raw.githubusercontent.com/PaoDaSerra/paodaserra/main/info.json')
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  var scrollButton = document.getElementById("verProdutos");
+  var produtos = document.getElementById("verProdutos");
+  var contato = document.getElementById("contatoNav");
+  var produtoNav = document.getElementById("produtoNav");
   var targetSection = document.getElementById("nossosProdutos");
+  var targetSection2 = document.getElementById("contatos");
 
-  scrollButton.addEventListener("click", function () {
+  produtos.addEventListener("click", function () {
       targetSection.scrollIntoView({ behavior: "smooth" });
+  });
+  produtoNav.addEventListener("click", function () {
+      targetSection.scrollIntoView({ behavior: "smooth" });
+  });
+  contato.addEventListener("click", function () {
+      targetSection2.scrollIntoView({ behavior: "smooth" });
   });
 });

@@ -16,12 +16,12 @@
 <body>
     <nav>
         <ul class="left">
-            <li>Produtos</li>
-            <li>Contato</li>
+            <button type="button" class="navButton" id="produtoNav">Produtos</button>
+            <button type="button" class="navButton" id="contatoNav">Contato</button>
         </ul>
 
         <ul class="right">
-            <li>carrinho</li>
+            <li class="navButton">carrinho</li>
         </ul>
     </nav>
 
@@ -45,9 +45,9 @@
     <div id="novidades">
         <h2>Receba Novidades!</h2>
         <div class="container">
-            <input type="text" class="input-box" name="email" id="a" autocomplete="sla" placeholder="Email">
-            <i class="icon-envelope"></i>
-            <button class="button">OK</button>
+            <!-- <i class="icon-envelope"><img src="assets/images/wave.png" alt=""></i> -->
+            <input type="text" class="input-box" name="email" id="a" placeholder="Email">
+            <button class="buttonOk">OK</button>
         </div>
         <h3>Insira o seu e-mail no campo acima e fique por dentro das novidades do Pão da Serra!</h3>
     </div>
@@ -55,6 +55,7 @@
     <div class="line"></div>
 
     <div id="contatos">
+        <h2>Contatos:</h2>
         <ul>
             <li><div class="contato">
                 <div class="logo"></div>
@@ -71,9 +72,7 @@
         </ul>
     </div>
 
-    <footer>
-    </footer>
+    <footer></footer>
 </body>
 <script src="script.js"></script>
-<script src="script2.js"></script>
 </html>
