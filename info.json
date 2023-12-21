@@ -5,56 +5,64 @@
       "imagem": "assets/images/paoTradicional.png",
       "descricao": "Massa levemente adocicada com textura leve e macia.",
       "ingredientes": ["Ingrediente 1A", "Ingrediente 1B", "Ingrediente 1C"],
-      "preco": 14.90
+      "preco": 14.90,
+      "quantidade": 1
     },
     {
       "nome": "Pão de Abóbora",
       "imagem": "assets/images/paoAbobora.png",
       "descricao": "Pão adocicado com abóbora adicionada à massa. Extremamente saboroso.",
       "ingredientes": ["Ingrediente 2A", "Ingrediente 2B", "Ingrediente 2C"],
-      "preco": 14.90
+      "preco": 14.90,
+      "quantidade": 1
     },
     {
       "nome": "Pão de Torresmo",
       "imagem": "assets/images/paoTorresmo.png",
       "descricao": "Pão levemente salgada, com torresmo adicionados à massa tornando-a mais nutritiva.",
       "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
-      "preco": 27.90
+      "preco": 27.90,
+      "quantidade": 1
     },
     {
       "nome": "Pão Cuca",
       "imagem": "assets/images/paoCuca.png",
       "descricao": "Pão estilo tradicional, com recheios de sua preferência, cobertos por farofa doce e crocante, perfumado com raspas de limão.",
       "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
-      "preco": 18.00
+      "preco": 18.00,
+      "quantidade": 1
     },
     {
       "nome": "Pão de Frios",
       "imagem": "assets/images/paoFrios.png",
       "descricao": "Massa salgada recheada com presunto e queijo.",
       "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
-      "preco": 18.00
+      "preco": 18.00,
+      "quantidade": 1
     },
     {
       "nome": "Pão de Trança",
       "imagem": "assets/images/paoCoco.png",
       "descricao": "Descrição do Pão 6.",
       "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
-      "preco": 16.00
+      "preco": 16.00,
+      "quantidade": 1
     },
     {
       "nome": "Pão Tradicional Pequeno",
       "imagem": "assets/images/paoPequeno.png",
       "descricao": "Descrição do Pão 7.",
       "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
-      "preco": 2.50
+      "preco": 2.50,
+      "quantidade": 1
     },
     {
       "nome": "Pão 8",
       "imagem": "assets/images/pao8.png",
       "descricao": "Descrição do Pão 8.",
       "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
-      "preco": 24.99
+      "preco": 24.99,
+      "quantidade": 1
     }
   ]
 }

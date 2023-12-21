@@ -1,5 +1,8 @@
 var doc = document.documentElement
+let produtos = [];
+let itemsCarrinho = [];
 
+// --------------------------------------------------------------------
 window.addEventListener('scroll', changeOpacity)
 
 function changeOpacity(e) {
@@ -13,7 +16,7 @@ function changeOpacity(e) {
 }
 
 
-
+// --------------------------------------------------------------------
 function listarPoes(produtos) {
     const gradeProdutos = document.querySelector("#produtos");
 
@@ -26,7 +29,7 @@ function listarPoes(produtos) {
     
             <div class="informacoes">
                 <h3 class="nome">${produto.nome}</h3>
-                <h3 class="preco">R$ ${produto.preco}</h3>
+                <h3 class="preco">R$ ${produto.preco.toFixed(2)}</h3>
             </div>
 
             
@@ -47,18 +50,27 @@ function listarPoes(produtos) {
 }
 
 
-
+// --------------------------------------------------------------------
 function listeners() {
   const diminuir = document.querySelectorAll(".diminuir_quantidade");
   const aumentar = document.querySelectorAll(".aumentar_quantidade");
+  const comprarBotoes = document.querySelectorAll('.comprar');
+  
+  
+  comprarBotoes.forEach((botao, indice) => {
+    botao.addEventListener('click', () => {
+      addToCart(produtos[indice]);
+      openCart();
+    });
+  });
 
   aumentar.forEach(function(button) {
     button.addEventListener("click", () => {
-        const quantidade = button.closest(".quantidade");
-        
-        var value = quantidade.childNodes[3].value;
-
-        if (value != 9) {
+      const quantidade = button.closest(".quantidade");
+      
+      var value = quantidade.childNodes[3].value;
+      
+      if (value != 9) {
           quantidade.childNodes[3].value++
         }
     })
@@ -77,8 +89,7 @@ function listeners() {
   })
 }
 
-
-
+// --------------------------------------------------------------------
 fetch('https://raw.githubusercontent.com/PaoDaSerra/paodaserra/main/info.json')
   .then(response => {
     if (!response.ok) {
@@ -88,22 +99,23 @@ fetch('https://raw.githubusercontent.com/PaoDaSerra/paodaserra/main/info.json')
     return response.json();
   })
   .then(data => {
-    listarPoes(data.produtos);
+    produtos = data.produtos;
+    listarPoes(produtos);
   })
   .catch(error => {
     console.error('Erro na requisição:', error);
   });
 
 
-
+// --------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-  var produtos = document.getElementById("verProdutos");
+  var verprodutos = document.getElementById("verProdutos");
   var contato = document.getElementById("contatoNav");
   var produtoNav = document.getElementById("produtoNav");
   var targetSection = document.getElementById("nossosProdutos");
   var targetSection2 = document.getElementById("contatos");
 
-  produtos.addEventListener("click", function () {
+  verprodutos.addEventListener("click", function () {
       targetSection.scrollIntoView({ behavior: "smooth" });
   });
   produtoNav.addEventListener("click", function () {
@@ -113,3 +125,39 @@ document.addEventListener("DOMContentLoaded", function () {
       targetSection2.scrollIntoView({ behavior: "smooth" });
   });
 });
+
+
+// --------------------------------------------------------------------
+function openCart() {
+  document.getElementById("cart").style.width = "320px";
+  // document.querySelector(".wrapper").style.opacity = "1";
+  /* displayCartItems(); */
+}
+
+function closeCart() {
+  document.getElementById("cart").style.width = "0";
+  // document.querySelector(".wrapper").style.opacity = "0";
+}
+
+function addToCart(product) {
+  itemsCarrinho.push(product);
+  console.log(itemsCarrinho)
+  /* displayCartItems(); */
+}
+
+/* function displayCartItems() {
+  const cartItemsElement = document.getElementById("cart-items");
+  cartItemsElement.innerHTML = "";
+  let totalPrice = 0;
+
+  cart.forEach(item => {
+    const listItem = document.createElement("li");
+    listItem.textContent = `${item.name} - R$ ${item.price.toFixed(2)}`;
+    cartItemsElement.appendChild(listItem);
+    totalPrice += item.price;
+  });
+
+  const totalElement = document.getElementById("preco");
+  totalElement.textContent = `R$ ${totalPrice.toFixed(2)}`;
+}
+ */
