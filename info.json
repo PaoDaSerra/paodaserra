@@ -55,14 +55,6 @@
       "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
       "preco": 2.50,
       "quantidade": 1
-    },
-    {
-      "nome": "Pão 8",
-      "imagem": "assets/images/pao8.png",
-      "descricao": "Descrição do Pão 8.",
-      "ingredientes": ["Ingrediente 3A", "Ingrediente 3B", "Ingrediente 3C"],
-      "preco": 24.99,
-      "quantidade": 1
     }
   ]
 }

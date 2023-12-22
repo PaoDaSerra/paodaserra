@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -16,7 +18,7 @@ nav {
     background: rgba(194, 88, 54, var(--op));
     color: #FFF;
     position: fixed;
-    z-index: 5;
+    z-index: 3;
     left: 0;
     top: 0;
     display: flex;
@@ -58,6 +60,8 @@ ul {
 }
 
 h1 {
+    font-family: 'Life Savers';
+    font-weight: 400;
     font-size: 5rem;
 }
 
@@ -77,6 +81,11 @@ h1 {
     gap: 1rem;
     z-index: 2;
     transform: translate(0, -20%);
+}
+
+.txt > h3 {
+    font-family: sans-serif;
+    font-weight: 400;
 }
 
 .banner:after {
@@ -105,6 +114,9 @@ h1 {
 }
 
 #nossosProdutos {
+    font-family: 'Life Savers';
+    font-weight: 400;
+    font-size: 1rem;
     padding: 4vh 6vw;
 }
 
@@ -126,6 +138,8 @@ h1 {
 .informacoes {
     display: flex;
     justify-content: space-between;
+/*     font-family: sans-serif;
+    font-size: 0.6em; */
 }
 
 .quantidade {
@@ -136,7 +150,7 @@ h1 {
 
 .quantidade_input {
     width: 15px;
-    height: 40px;
+    height: 35px;
     background: transparent;
     border: none;
     text-align: center;
@@ -162,6 +176,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .comprar {
+    font-size: 0.7rem;
     width: 60%;
     background: #C25836;
     color: #FFF;
@@ -181,11 +196,16 @@ input[type="number"]::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 400;
 }
 
 #novidades > h2, 
 #contatos > h2 {
+    font-family: 'Life Savers';
+    font-weight: 400;
+    font-size: 1.6rem;
     color: #C25836;
 }
 
@@ -280,6 +300,7 @@ input[type="number"]::-webkit-inner-spin-button {
     /* background: #ccc; */
     width: 100%;
     height: 100%;
+    overflow: auto;
 }
 
 #cart-items > .lineDivision {
@@ -436,4 +457,17 @@ input[type="number"]::-webkit-inner-spin-button {
     border-radius: 4px;
     height: 40px;
     white-space: nowrap;
+}
+
+#filtro {
+    display: none;
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transition: 1s;
 }
